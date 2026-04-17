@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Madhur Rohtagi | Portfolio </title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b0b;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #b91c1c; /* dull red */
+}
+
+#typing {
+    margin-top: 10px;
+    color: #a3a3a3;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(20, 20, 20, 0.9);
+    border-bottom: 1px solid #2a2a2a;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px;
+}
+
+nav a {
+    color: #d4d4d4;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+/* subtle underline */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    left: 0;
+    bottom: -4px;
+    background: #b91c1c;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #b91c1c;
+}
+
+/* SECTIONS */
+section {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #111111;
+    border-radius: 12px;
+    border: 1px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom: 20px;
+    color: #b91c1c;
+}
+
+h3 {
+    color: #dc2626;
+}
+
+/* TEXT */
+p {
+    color: #d4d4d4;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.about img {
+    width: 160px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+/* SKILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #e5e5e5;
+    transition: 0.25s;
+}
+
+.skills-list li:hover {
+    background: #2a1a1a;
+}
+
+/* PROJECTS */
+.projects li {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #141414;
+    border: 1px solid #1f1f1f;
+    color: #d4d4d4;
+    transition: 0.3s;
+}
+
+.projects li:hover {
+    transform: scale(1.01);
+}
+
+/* LINKS */
+a {
+    color: #dc2626;
+    text-decoration: none;
+}
+
+/* CONTACT */
+.contact a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+}
+
+.contact a:hover {
+    background: #2a1a1a;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Madhur Rohtagi</h1>
+    <p id="typing"></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#edu">Education</a></li>
+        <li><a href="#skl">Skills</a></li>
+        <li><a href="#ach">Achievements</a></li>
+        <li><a href="#pro">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <img src="WhatsApp Image 2026-04-17 at 7.21.45 PM.jpeg" alt="Profile Picture">
+        <p>
+            I am a B.Tech IT student at NIT Jalandhar with a strong interest in software development 
+            and problem solving.
+
+            <br><br>
+
+            Currently, I am focusing on Data Structures, Java, and Web Development. 
+            I enjoy building projects and continuously improving my technical skills.
+
+            <br><br>
+
+            My goal is to become a skilled software engineer and work on impactful real-world applications.
+        </p>
+    </div>
+</section>
+
+<section id="edu">
+    <h2>Education</h2>
+    <ol>
+        <li>High School (2022) – 94%</li>
+        <li>Senior Secondary (2024) – 93%</li>
+        <li>B.Tech IT – NIT Jalandhar (Expected 2029)</li>
+    </ol>
+</section>
+
+<section id="skl">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="ach">
+    <h2>Achievements</h2>
+    <ul>
+        <li>🎓 Strong academic performance in school</li>
+        <li>💻 Actively learning DSA and Web Development</li>
+    </ul>
+</section>
+
+<section id="pro" class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
+        </li>
+
+        <li>
+            <h3>Java Projects</h3>
+            <p>Practiced multiple Java programs including OOP concepts.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+        📞 <a href="tel:7668710677">Telephone</a><br>
+        📧 <a href="mailto:madhurr.it.25@nitj.ac.in">Gmail</a><br>
+        🔗 <a href="https://www.linkedin.com/in/madhur-rohtagi-60ab52366?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a><br>
+        💻 <a href="https://github.com/Madhur-Rohtagi">GitHub</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Madhur Rohtagi</p>
+</footer>
+
+<script>
+const text = "Software Developer | Web Developer";
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+}
+typing();
+</script>
+
+</body>
+</html>
